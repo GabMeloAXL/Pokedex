@@ -1,0 +1,35 @@
+/* realizo a conexão pelo link da fonte Oxanium pelo GoogleApis */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+/*Especifico de posição da pagina e a fonte, posição do menu */
+* {margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Oxanium', cursive;}
+main {
+    display: inline-block;
+    margin-top: 2%; padding: 15px; position: relative;}
+/*config para manter texto no centro, e crio um background com gradiente de cima para baixo, especifico 100vh para o efeito extender até o fim da pag*/
+body {text-align: center; background: linear-gradient(to bottom, #6ab7f5, #fff); min-height: 100vh;}
+/*medidas para imagem da pokedex (aproveito 100% dentro da medida especificada do main)*/
+.pokedex { width: 100%; max-width: 425px;}
+/*caso a pagina seja scrollada pra diminuir ou aumentar, a imagem do pokémon ficará entre a imagem estabelecida*/
+.pokemon_image {position: absolute; bottom: 55%px; left: 50%px; transform: translate(-63%,20%); height: 18%;}
+/*irá indicar numero e nome do pokemon*/
+.pokemon_data {position: absolute;
+font-weight: 600;
+color: #aaa;
+top: 54.5%;
+right: 27%;
+font-size: clamp(8px, 5vw, 25px);}
+
+.pokemon_name {color: #3a444d; text-transform: capitalize;}
+
+.form {position: absolute; width: 100%; background-color: red; width: 65%; top: 65%; left: 21%; z-index: 1;}
+
+.input_search {width: 100%; padding: 4%; border: 2px solid #333; outline: none; border-radius: 5%; font-weight: 900; color: #333; font-size: clamp(8px, 5vw, 1rem); box-shadow: -3px 5px 0 #888, -4px 6px 0 #333;}
+
+.buttons {position: absolute; bottom: 10%; left: 50%; width: 65%; transform: translate(-57%, 0); z-index: 10; display: flex; gap: 20px;}
+
+.button {width: 50%; padding: 4px; border: 2px solid #000; box-shadow: -2px 3px 0 #222, -4px 6px 0 #000; font-size: clamp(8px, 5vw, 1rem); font-weight: 600; color: white; background-color: #444;}
+
+.button:active {box-shadow: inset -4px 4px 0 #000;}
